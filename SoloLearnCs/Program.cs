@@ -8,12 +8,19 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            int age;
-            Console.WriteLine("Podaj wiek: ");
-            age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Twoj wiek to {0}", age);
-        }
+        static void Main(string[] args) {
+            int num = 2;
+            switch (num) {
+                case 1:
+                break;
+
+                case 2:
+                Console.WriteLine("Wybrales 2");
+                break;
+
+                default:
+                break;
+            }
+        }            
     }
 }
