@@ -10,7 +10,10 @@ namespace SoloLearnCs
     {
         static void Main(string[] args)
         {
-            //Pierwszy commit
+            int age;
+            Console.WriteLine("Podaj wiek: ");
+            age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Twoj wiek to {0}", age);
         }
     }
 }
