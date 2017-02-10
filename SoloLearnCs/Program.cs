@@ -9,18 +9,15 @@ namespace SoloLearnCs
     class Program
     {
         static void Main(string[] args) {
-            int num = 2;
-            switch (num) {
-                case 1:
-                break;
-
-                case 2:
-                Console.WriteLine("Wybrales 2");
-                break;
-
-                default:
-                break;
+            while (true) {
+                Console.WriteLine("x ");
+                string str = Console.ReadLine();
+                if (str == "exit") break;
+                int x = Convert.ToInt32(str);
+                Console.WriteLine("y ");
+                int y = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("x+y= {0}", x+y);
             }
-        }            
-    }
+        }
+    }            
 }
