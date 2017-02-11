@@ -8,16 +8,15 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static void Main(string[] args) {
-            while (true) {
-                Console.WriteLine("x ");
-                string str = Console.ReadLine();
-                if (str == "exit") break;
-                int x = Convert.ToInt32(str);
-                Console.WriteLine("y ");
-                int y = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("x+y= {0}", x+y);
+        static int power(int x, int y=2) {
+            int result = 1;
+            for (int i = 0; i<y; i++) {
+                result *= x;
             }
+            return result;
+        }
+        static void Main(string[] args) {
+            Console.WriteLine(power(5,3));
         }
     }            
 }
