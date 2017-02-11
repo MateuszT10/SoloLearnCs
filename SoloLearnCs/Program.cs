@@ -8,11 +8,13 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static int mul(int x, int y) {
-            return x*y;
+        static void sqr(ref int x) {
+           x= x*x;
         }
         static void Main(string[] args) {
-            Console.WriteLine(mul(y:3,x:3));
+            int a = 3;
+            sqr(ref a);
+            Console.WriteLine(a);
         }
     }            
 }
