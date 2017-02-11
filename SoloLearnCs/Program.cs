@@ -8,13 +8,14 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static void sqr(ref int x) {
-           x= x*x;
+        static void Ask(out string str) {
+           str = Console.ReadLine();
         }
         static void Main(string[] args) {
-            int a = 3;
-            sqr(ref a);
-            Console.WriteLine(a);
+            string str;
+            Console.WriteLine("Zapytaj ");
+            Ask(out str);
+            Console.WriteLine("Zapytales o: " + str);
         }
     }            
 }
