@@ -8,15 +8,11 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static int power(int x, int y=2) {
-            int result = 1;
-            for (int i = 0; i<y; i++) {
-                result *= x;
-            }
-            return result;
+        static int mul(int x, int y) {
+            return x*y;
         }
         static void Main(string[] args) {
-            Console.WriteLine(power(5,3));
+            Console.WriteLine(mul(y:3,x:3));
         }
     }            
 }
