@@ -8,14 +8,15 @@ namespace SoloLearnCs
 {
     class Program
     {
-        static void Ask(out string str) {
-           str = Console.ReadLine();
-        }
+        public string Imie{ get; set; }
+        public string Nazwisko { get; set; }
+        private int wiek;
         static void Main(string[] args) {
-            string str;
-            Console.WriteLine("Zapytaj ");
-            Ask(out str);
-            Console.WriteLine("Zapytales o: " + str);
+            Program p = new Program();
+            p.Imie = "Mateusz";
+            p.Nazwisko = "Trompka";
+            Console.WriteLine(p.Imie);
+            Console.WriteLine(p.Nazwisko);
         }
     }            
 }
